@@ -3,18 +3,18 @@
 #define INCLUDE_TRAIN_H_
 
 class Train {
-private:
+ private:
   struct Cage {
-    bool light; 
+    bool light;
     Cage *next;
     Cage *prev;
   };
   int countOp;
   Cage *first;
-public:
+ public:
   Train();
   void addCage(bool light);
-  int getLength();         
-  int getOpCount();         
+  int getLength();   
+  int getOpCount();
 };
 #endif  // INCLUDE_TRAIN_H_
